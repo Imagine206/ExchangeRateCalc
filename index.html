@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3cfd7f0753.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Exchange Rate</title>
+</head>
+<body>
+    <i class="fa-solid fa-dollar-sign"></i>
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amounts to get the Exchange reate</p>
+
+    <div class="container">
+        <div class="currency">
+            <select name="" id="currency-one">
+                <option value="USD" selected>USD</option>
+                <option value="UAH">UAH</option>
+                <option value="VND">VND</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+            <input type="number" id="amount-one" placeholder="0" value="1">
+        </div>
+
+        <div class="swap-rate-container">
+            <button class="btn" id="rate">
+                Swap
+            </button>
+            <div class="rate" id="rate"></div>
+        </div>
+
+        <div class="currency">
+            <select name="" id="currency-two">
+                <option value="USD">USD</option>
+                <option value="UAH">UAH</option>
+                <option value="VND">VND</option>
+                <option value="ZAR" selected>ZAR</option>
+            </select>
+            <input type="number" id="amount-two" placeholder="0" value="">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
